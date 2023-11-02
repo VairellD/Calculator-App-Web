@@ -1,0 +1,26 @@
+
+#calculator {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  #display {
+    width: 100%;
+    height: 150px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 55px;
+  }
+  
+  #numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  #numpad :hover{
+    background-color: #b03333;
+  }
+  
+  button {
+    height: 100px;
+  }
