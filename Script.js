@@ -14,13 +14,13 @@ numpad.addEventListener('click', function(event) {
       } else {
         operand2 += target.innerText;
           display.value = operand1 + ' ' + operator + ' ' + operand2; // update display
-          // history.value = operand1 + ' ' + operator + ' ' + operand2;// update history
+          
       }
     } else if (target.matches('.operator')) {
       operator = target.innerText;
       display.value = operand1 + ' ' + operator;
     } else if (target.matches('#equals')) {
-      history.value = operand1 + ' ' + operator + ' ' + operand2;
+      history.value = operand1 + ' ' + operator + ' ' + operand2; // update history
       operand1 = eval(operand1 + operator + operand2);
       display.value = operand1;
       
